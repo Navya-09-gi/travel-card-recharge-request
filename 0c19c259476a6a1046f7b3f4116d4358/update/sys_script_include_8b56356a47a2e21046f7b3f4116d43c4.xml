@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1791348_travel_0.getEmpDet</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>getEmpDet</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var getEmpDet = Class.create();
+getEmpDet.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getEmpInfo: function() {
+        var empId = this.getParameter('sysparm_empnum');
+        var result = {};
+
+        gs.info("Received Employee ID: " + empId);
+
+        var empGR = new GlideRecord('x_1791348_travel_0_employee_details'); // ✅ Use your actual employee table here
+        empGR.addQuery('sys_id', empId); // Use sys_id if you're passing it instead
+        empGR.query();
+
+        if (empGR.next()) {
+            gs.info('Employee record found.');
+
+            result.name = empGR.name + '';
+            result.email = empGR.email + '';
+            result.contact_number = empGR.contact_number + '';
+            result.project = empGR.project + '';
+            result.tdm_or_account_manager = empGR.tdm_or_account_manager + '';
+            result.card_number = empGR.card_number + '';
+            result.bank_name_of_the_card = empGR.bank_name_of_the_card + '';
+        } else {
+            gs.info('No employee record found for ID: ' + empId);
+        }
+
+        return JSON.stringify(result);
+    },
+
+    type: 'getEmpDet'
+});
+
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 06:36:16</sys_created_on>
+        <sys_id>8b56356a47a2e21046f7b3f4116d43c4</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>getEmpDet</sys_name>
+        <sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0">0c19c259476a6a1046f7b3f4116d4358</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</sys_scope>
+        <sys_update_name>sys_script_include_8b56356a47a2e21046f7b3f4116d43c4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 07:27:47</sys_updated_on>
+    </sys_script_include>
+</record_update>

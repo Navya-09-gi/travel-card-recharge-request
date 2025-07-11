@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="2">d56e0a9b47e2e61046f7b3f4116d4302</sp_column>
+        <sp_widget display_value="My Surveys">04b1cc07c3231200e44574e1c1d3ae96</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 16:09:21</sys_created_on>
+        <sys_id>5d6e0a9b47e2e61046f7b3f4116d4304</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>My Surveys</sys_name>
+        <sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0">0c19c259476a6a1046f7b3f4116d4358</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</sys_scope>
+        <sys_update_name>sp_instance_5d6e0a9b47e2e61046f7b3f4116d4304</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 17:04:42</sys_updated_on>
+        <title>My Surveys</title>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=5d6e0a9b47e2e61046f7b3f4116d4304"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</application>
+        <file_path/>
+        <instance_id>dfdc4c3093f0ee54d9f6ddd548373c3b</instance_id>
+        <instance_name>dev318814</instance_name>
+        <name>sp_instance_5d6e0a9b47e2e61046f7b3f4116d4304</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="2">d56e0a9b47e2e61046f7b3f4116d4302</sp_column><sp_widget display_value="My Surveys">04b1cc07c3231200e44574e1c1d3ae96</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-10 16:09:21</sys_created_on><sys_id>5d6e0a9b47e2e61046f7b3f4116d4304</sys_id><sys_mod_count>1</sys_mod_count><sys_name>My Surveys</sys_name><sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0">0c19c259476a6a1046f7b3f4116d4358</sys_package><sys_policy/><sys_scope display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</sys_scope><sys_update_name>sp_instance_5d6e0a9b47e2e61046f7b3f4116d4304</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-10 17:04:42</sys_updated_on><title>My Surveys</title><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=5d6e0a9b47e2e61046f7b3f4116d4304"/></record_update>]]></payload>
+        <payload_hash>-601348234</payload_hash>
+        <record_name>My Surveys</record_name>
+        <reverted_from/>
+        <source>c019c259476a6a1046f7b3f4116d435d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 17:04:42</sys_created_on>
+        <sys_id>8c1b56db4726e61046f7b3f4116d43d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197f54be9b70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 17:04:42</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>441b56dbf326e6101f63031be62d2ad5</update_guid>
+        <update_guid_history>441b56dbf326e6101f63031be62d2ad5:-601348234,156e0a9bbfe2e610bef8a3b57f9db706:960894933</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="My Surveys">f2956adf4726e61046f7b3f4116d43fe</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 17:50:46</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>40d6e40f5aa64aa5a12bdf1794c0a769</sys_id>
+        <sys_metadata>5d6e0a9b47e2e61046f7b3f4116d4304</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My Surveys</sys_name>
+        <sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0">0c19c259476a6a1046f7b3f4116d4358</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</sys_scope>
+        <sys_scope_delete display_value="">2962bc8133a64c04927a8f44df7beb89</sys_scope_delete>
+        <sys_update_name>sp_instance_5d6e0a9b47e2e61046f7b3f4116d4304</sys_update_name>
+        <sys_update_version display_value="sp_instance_5d6e0a9b47e2e61046f7b3f4116d4304">8c1b56db4726e61046f7b3f4116d43d5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 17:50:46</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

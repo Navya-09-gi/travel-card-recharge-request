@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Travel Card Recharge ">c266ca5247ee621046f7b3f4116d43a4</catalog_item>
+        <catalog_variable>IO:118afe5647e2a21046f7b3f4116d43bf</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <order>500</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 10:00:13</sys_created_on>
+        <sys_id>b396a6ea47a6e21046f7b3f4116d4304</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>tdm_or_account_manager</sys_name>
+        <sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0">0c19c259476a6a1046f7b3f4116d4358</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_b396a6ea47a6e21046f7b3f4116d4304</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 10:00:13</sys_updated_on>
+        <table/>
+        <ui_policy display_value="UI Policy for Employee details">5481a62647a6e21046f7b3f4116d43e9</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>tdm_or_account_manager</variable>
+        <variable_set/>
+        <visible>ignore</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=b396a6ea47a6e21046f7b3f4116d4304"/>
+</record_update>

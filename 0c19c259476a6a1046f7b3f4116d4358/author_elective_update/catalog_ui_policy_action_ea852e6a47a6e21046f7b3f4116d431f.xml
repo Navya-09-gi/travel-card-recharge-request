@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="travel card recharge ">c266ca5247ee621046f7b3f4116d43a4</catalog_item>
+        <catalog_variable>IO:c9d9be1647e2a21046f7b3f4116d435a</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 09:55:13</sys_created_on>
+        <sys_id>ea852e6a47a6e21046f7b3f4116d431f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>email</sys_name>
+        <sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0">0c19c259476a6a1046f7b3f4116d4358</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_ea852e6a47a6e21046f7b3f4116d431f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 09:55:13</sys_updated_on>
+        <table/>
+        <ui_policy display_value="UI Policy for Employee details">5481a62647a6e21046f7b3f4116d43e9</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>email</variable>
+        <variable_set/>
+        <visible>ignore</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="DELETE" query="documentkey=ea852e6a47a6e21046f7b3f4116d431f"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</application>
+        <file_path/>
+        <instance_id>dfdc4c3093f0ee54d9f6ddd548373c3b</instance_id>
+        <instance_name>dev318814</instance_name>
+        <name>catalog_ui_policy_action_ea852e6a47a6e21046f7b3f4116d431f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="travel card recharge ">c266ca5247ee621046f7b3f4116d43a4</catalog_item><catalog_variable>IO:c9d9be1647e2a21046f7b3f4116d435a</catalog_variable><cleared>false</cleared><disabled>true</disabled><field/><field_message/><field_message_type>none</field_message_type><mandatory>ignore</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-08 09:55:13</sys_created_on><sys_id>ea852e6a47a6e21046f7b3f4116d431f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>email</sys_name><sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0">0c19c259476a6a1046f7b3f4116d4358</sys_package><sys_policy/><sys_scope display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</sys_scope><sys_update_name>catalog_ui_policy_action_ea852e6a47a6e21046f7b3f4116d431f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-08 09:55:13</sys_updated_on><table/><ui_policy display_value="UI Policy for Employee details">5481a62647a6e21046f7b3f4116d43e9</ui_policy><value/><value_action>ignore</value_action><variable>email</variable><variable_set/><visible>ignore</visible></catalog_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=ea852e6a47a6e21046f7b3f4116d431f"/></record_update>]]></payload>
+        <payload_hash>-1873404057</payload_hash>
+        <record_name>email</record_name>
+        <reverted_from/>
+        <source>c019c259476a6a1046f7b3f4116d435d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 09:55:13</sys_created_on>
+        <sys_id>9d956e6a47a6e21046f7b3f4116d4326</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197e975fd150000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 09:55:13</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>91956e6abea6e2107e4074ef62702626</update_guid>
+        <update_guid_history>91956e6abea6e2107e4074ef62702626:-1873404057</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="email">05e5ea6a47a6e21046f7b3f4116d43b3</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 09:56:34</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>12c0f09f089c4df890c2cbd7f5b65f24</sys_id>
+        <sys_metadata>ea852e6a47a6e21046f7b3f4116d431f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>email</sys_name>
+        <sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0">0c19c259476a6a1046f7b3f4116d4358</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</sys_scope>
+        <sys_scope_delete display_value="">2962bc8133a64c04927a8f44df7beb89</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_ea852e6a47a6e21046f7b3f4116d431f</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_ea852e6a47a6e21046f7b3f4116d431f">9d956e6a47a6e21046f7b3f4116d4326</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 09:56:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

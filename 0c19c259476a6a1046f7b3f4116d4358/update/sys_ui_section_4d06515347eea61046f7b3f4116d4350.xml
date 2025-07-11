@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Employee Details" section_id="4d06515347eea61046f7b3f4116d4350" sys_domain="global" table="x_1791348_travel_0_travel_card_recharge_request_details" version="3" view="workspace-travel-card-recharge-request-details-0">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>employee_id</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-10 12:03:01</sys_created_on>
+            <sys_id>c506515347eea61046f7b3f4116d4354</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Employee Details" display_value="Employee Details" name="x_1791348_travel_0_travel_card_recharge_request_details" sys_domain="global" view="6ef59d1337eea610d39e30ef579f4dce">4d06515347eea61046f7b3f4116d4350</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-10 12:03:01</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>employee_id.email</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-10 12:03:01</sys_created_on>
+            <sys_id>4506515347eea61046f7b3f4116d4355</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Employee Details" display_value="Employee Details" name="x_1791348_travel_0_travel_card_recharge_request_details" sys_domain="global" view="6ef59d1337eea610d39e30ef579f4dce">4d06515347eea61046f7b3f4116d4350</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-10 12:03:01</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>employee_id.contact_number</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-10 12:03:01</sys_created_on>
+            <sys_id>8506915347eea61046f7b3f4116d4375</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Employee Details" display_value="Employee Details" name="x_1791348_travel_0_travel_card_recharge_request_details" sys_domain="global" view="6ef59d1337eea610d39e30ef579f4dce">4d06515347eea61046f7b3f4116d4350</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-10 12:03:01</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>employee_id.bank_name_of_the_card</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-10 12:03:01</sys_created_on>
+            <sys_id>4d06515347eea61046f7b3f4116d4355</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Employee Details" display_value="Employee Details" name="x_1791348_travel_0_travel_card_recharge_request_details" sys_domain="global" view="6ef59d1337eea610d39e30ef579f4dce">4d06515347eea61046f7b3f4116d4350</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-10 12:03:01</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>employee_id.tdm_or_account_manager</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-10 12:03:01</sys_created_on>
+            <sys_id>8d06915347eea61046f7b3f4116d4375</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Employee Details" display_value="Employee Details" name="x_1791348_travel_0_travel_card_recharge_request_details" sys_domain="global" view="6ef59d1337eea610d39e30ef579f4dce">4d06515347eea61046f7b3f4116d4350</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-10 12:03:01</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-10 12:03:01</sys_created_on>
+            <sys_id>4506515347eea61046f7b3f4116d4356</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Employee Details" display_value="Employee Details" name="x_1791348_travel_0_travel_card_recharge_request_details" sys_domain="global" view="6ef59d1337eea610d39e30ef579f4dce">4d06515347eea61046f7b3f4116d4350</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-10 12:03:01</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>employee_id.name</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-10 12:03:01</sys_created_on>
+            <sys_id>8506915347eea61046f7b3f4116d4376</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Employee Details" display_value="Employee Details" name="x_1791348_travel_0_travel_card_recharge_request_details" sys_domain="global" view="6ef59d1337eea610d39e30ef579f4dce">4d06515347eea61046f7b3f4116d4350</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-10 12:03:01</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>employee_id.project</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-10 12:03:01</sys_created_on>
+            <sys_id>4d06515347eea61046f7b3f4116d4356</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Employee Details" display_value="Employee Details" name="x_1791348_travel_0_travel_card_recharge_request_details" sys_domain="global" view="6ef59d1337eea610d39e30ef579f4dce">4d06515347eea61046f7b3f4116d4350</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-10 12:03:01</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>employee_id.card_number</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-10 12:03:01</sys_created_on>
+            <sys_id>8d06915347eea61046f7b3f4116d4376</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Employee Details" display_value="Employee Details" name="x_1791348_travel_0_travel_card_recharge_request_details" sys_domain="global" view="6ef59d1337eea610d39e30ef579f4dce">4d06515347eea61046f7b3f4116d4350</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-10 12:03:01</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Employee Details</caption>
+            <header>false</header>
+            <name>x_1791348_travel_0_travel_card_recharge_request_details</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-10 12:03:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4d06515347eea61046f7b3f4116d4350</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1791348_travel_0_travel_card_recharge_request_details</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0">0c19c259476a6a1046f7b3f4116d4358</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</sys_scope>
+            <sys_update_name>sys_ui_section_4d06515347eea61046f7b3f4116d4350</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-10 12:03:01</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Workspace Travel Card Recharge Request Details 0" name="workspace-travel-card-recharge-request-details-0">6ef59d1337eea610d39e30ef579f4dce</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_search_source_m2m">
+    <ais_search_profile_ais_search_source_m2m action="INSERT_OR_UPDATE">
+        <exclude_attachments_in_now_assist_genius_results>false</exclude_attachments_in_now_assist_genius_results>
+        <exclude_in_now_assist_genius_results>false</exclude_in_now_assist_genius_results>
+        <exclude_in_regular_search>false</exclude_in_regular_search>
+        <profile display_value="travel-card-recharge-request-details Search Profile">a6f59d1342eea6100a9f1304e9ad4ce3</profile>
+        <search_source display_value="Travel Card Recharge Request Details">5006115347eea61046f7b3f4116d43d4</search_source>
+        <sys_class_name>ais_search_profile_ais_search_source_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 12:02:58</sys_created_on>
+        <sys_id>dc06115347eea61046f7b3f4116d43d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>travel-card-recharge-request-details Search Profile.Travel Card Recharge Request Details</sys_name>
+        <sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0">0c19c259476a6a1046f7b3f4116d4358</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</sys_scope>
+        <sys_update_name>ais_search_profile_ais_search_source_m2m_dc06115347eea61046f7b3f4116d43d7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 12:02:58</sys_updated_on>
+    </ais_search_profile_ais_search_source_m2m>
+</record_update>

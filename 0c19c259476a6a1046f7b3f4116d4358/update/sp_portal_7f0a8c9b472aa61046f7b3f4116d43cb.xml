@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_portal">
+    <sp_portal action="INSERT_OR_UPDATE">
+        <alternate_portal/>
+        <communication_channels/>
+        <css_variables>$brand-primary:#1F8476;
+$body-bg:#ffffff;
+$state-success-text:#1e4335;
+$sp-homepage-bg:#fff;
+$sp-navbar-divider-color:#5A7F71;
+$text-color:#2e2e2e;
+$sp-logo-margin-y:7px;
+$navbar-inverse-link-hover-color:#303636;
+$panel-bg:#fff;
+$brand-success:#48C891;
+$navbar-inverse-bg:#293e40;
+$brand-warning:#DFD139;
+$brand-danger:#C83C36;
+$sp-tagline-color:#ffffff;
+$navbar-inverse-link-color:#A7B0B2;
+$brand-info:#6ABECF;
+$link-color:#1F8476;
+$sp-logo-margin-x:13px;
+$btn-default-bg:#fff;
+$text-muted:#666666;
+</css_variables>
+        <dark_theme/>
+        <default>false</default>
+        <enable_ais>false</enable_ais>
+        <enable_certificate_based_authentication>false</enable_certificate_based_authentication>
+        <enable_favorites>false</enable_favorites>
+        <hide_portal_name>false</hide_portal_name>
+        <homepage display_value="copy_of_index_1">056ec25f47a2e61046f7b3f4116d43de</homepage>
+        <icon/>
+        <inactive>false</inactive>
+        <kb_knowledge_base/>
+        <kb_knowledge_page display_value="kb_view2">26c2e030d7201200a9addd173e24d437</kb_knowledge_page>
+        <login_page/>
+        <logo>4c1345e347a22a1046f7b3f4116d43ce</logo>
+        <notfound_page display_value="404">3c2c9063cb11020000f8d856634c9c1f</notfound_page>
+        <quick_start_config/>
+        <rtl_enabled>false</rtl_enabled>
+        <sc_catalog/>
+        <sc_catalog_page/>
+        <sc_category_page/>
+        <search_application/>
+        <search_results_configuration/>
+        <sp_chat_queue/>
+        <sp_rectangle_menu display_value="Travel Card Recharge Request Menu">6a4b4c1f472aa61046f7b3f4116d4339</sp_rectangle_menu>
+        <sys_class_name>sp_portal</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 06:38:41</sys_created_on>
+        <sys_id>7f0a8c9b472aa61046f7b3f4116d43cb</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Travel Card Recharge Request</sys_name>
+        <sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0">0c19c259476a6a1046f7b3f4116d4358</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</sys_scope>
+        <sys_update_name>sp_portal_7f0a8c9b472aa61046f7b3f4116d43cb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 05:20:27</sys_updated_on>
+        <theme display_value="La Jolla">a7a6e78277002300a6e592718a10617a</theme>
+        <title>Travel Card Recharge Request</title>
+        <ts_index_group/>
+        <url_suffix>tcr</url_suffix>
+    </sp_portal>
+    <sys_translated_text action="delete_multiple" query="documentkey=7f0a8c9b472aa61046f7b3f4116d43cb"/>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color/>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/webp</content_type>
+        <file_name>logo</file_name>
+        <hash>5700b0eb3ee2c7c6f734603528626daacd5acf5c02158b4ac8438ca17cc50232</hash>
+        <image_height/>
+        <image_width/>
+        <size_bytes>1936</size_bytes>
+        <size_compressed>1959</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-11 05:18:42</sys_created_on>
+        <sys_id>4c1345e347a22a1046f7b3f4116d43ce</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>guest</sys_updated_by>
+        <sys_updated_on>2025-07-11 05:18:42</sys_updated_on>
+        <table_name>ZZ_YYsp_portal</table_name>
+        <table_sys_id>7f0a8c9b472aa61046f7b3f4116d43cb</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAA/w==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="logo" sys_id="4c1345e347a22a1046f7b3f4116d43ce">4c1345e347a22a1046f7b3f4116d43ce</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-11 05:18:42</sys_created_on>
+        <sys_id>8c1345e347a22a1046f7b3f4116d43ce</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>2600</length>
+        <position>1</position>
+        <sys_attachment display_value="logo" sys_id="4c1345e347a22a1046f7b3f4116d43ce">4c1345e347a22a1046f7b3f4116d43ce</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-11 05:18:42</sys_created_on>
+        <sys_id>001345e347a22a1046f7b3f4116d43cf</sys_id>
+    </sys_attachment_doc>
+</record_update>

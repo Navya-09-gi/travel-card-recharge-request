@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>amount_to_be_loaded</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>validation of amount to be loaded(no)</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading || newValue == '') {
+        return;
+    }
+
+    // Clear previous messages
+    g_form.hideFieldMsg('amount_to_be_loaded', true);
+
+    // Check if input is not a number
+    if (!/^\d+(\.\d{1,2})?$/.test(newValue)) {
+        g_form.showFieldMsg(
+            'amount_to_be_loaded', // Field name
+            '❌ Only numeric values are allowed. Please enter a valid amount.', // Message
+            'error' // Message type (error, info, warning)
+        );
+        g_form.setValue('amount_to_be_loaded', ''); // Clear the field
+    }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 16:38:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5ea1083647aee21046f7b3f4116d4319</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>validation of amount to be loaded(no)</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0">0c19c259476a6a1046f7b3f4116d4358</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</sys_scope>
+        <sys_update_name>sys_script_client_5ea1083647aee21046f7b3f4116d4319</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 16:44:22</sys_updated_on>
+        <table>x_1791348_travel_0_travel_card_recharge_request_details</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</application>
+        <file_path/>
+        <instance_id>dfdc4c3093f0ee54d9f6ddd548373c3b</instance_id>
+        <instance_name>dev318814</instance_name>
+        <name>sys_script_client_5ea1083647aee21046f7b3f4116d4319</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;amount_to_be_loaded&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;validation of amount to be loaded(no)&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading || newValue == '') {
+        return;
+    }
+
+    // Clear previous messages
+    g_form.hideFieldMsg('amount_to_be_loaded', true);
+
+    // Check if input is not a number
+    if (!/^\d+(\.\d{1,2})?$/.test(newValue)) {
+        g_form.showFieldMsg(
+            'amount_to_be_loaded', // Field name
+            '❌ Only numeric values are allowed. Please enter a valid amount.', // Message
+            'error' // Message type (error, info, warning)
+        );
+        g_form.setValue('amount_to_be_loaded', ''); // Clear the field
+    }
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-08 16:38:35&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;5ea1083647aee21046f7b3f4116d4319&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;validation of amount to be loaded(no)&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0"&gt;0c19c259476a6a1046f7b3f4116d4358&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Travel Card Recharge Request Details"&gt;0c19c259476a6a1046f7b3f4116d4358&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_5ea1083647aee21046f7b3f4116d4319&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-08 16:44:22&lt;/sys_updated_on&gt;&lt;table&gt;x_1791348_travel_0_travel_card_recharge_request_details&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1622469901</payload_hash>
+        <record_name>validation of amount to be loaded(no)</record_name>
+        <reverted_from/>
+        <source>c019c259476a6a1046f7b3f4116d435d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 16:44:22</sys_created_on>
+        <sys_id>363348b647aee21046f7b3f4116d43fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197eaec932c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 16:44:22</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>fa3348b6f6aee210cbd8b2f5fbe902fa</update_guid>
+        <update_guid_history>fa3348b6f6aee210cbd8b2f5fbe902fa:-1622469901,06e1847277aee2101def45df7d8da2f2:-1253359199</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 16:46:00</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>cc24fa9b5ea34adbaf63e20e6526e549</sys_id>
+        <sys_metadata>5ea1083647aee21046f7b3f4116d4319</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>validation of amount to be loaded(no)</sys_name>
+        <sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0">0c19c259476a6a1046f7b3f4116d4358</sys_package>
+        <sys_parent display_value="Travel Card Recharge Request Details">600f210a472a221046f7b3f4116d43fc</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</sys_scope>
+        <sys_scope_delete display_value="">2962bc8133a64c04927a8f44df7beb89</sys_scope_delete>
+        <sys_update_name>sys_script_client_5ea1083647aee21046f7b3f4116d4319</sys_update_name>
+        <sys_update_version display_value="sys_script_client_5ea1083647aee21046f7b3f4116d4319">363348b647aee21046f7b3f4116d43fb</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 16:46:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

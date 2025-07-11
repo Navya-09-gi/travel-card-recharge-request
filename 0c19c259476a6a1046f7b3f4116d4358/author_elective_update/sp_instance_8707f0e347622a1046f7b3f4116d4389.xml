@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>primary</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">6c3e9c2747eee61046f7b3f4116d4314</sp_column>
+        <sp_widget display_value="link-button">abc50de6d702120023c84f80de61036a</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-11 04:26:12</sys_created_on>
+        <sys_id>8707f0e347622a1046f7b3f4116d4389</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0">0c19c259476a6a1046f7b3f4116d4358</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</sys_scope>
+        <sys_update_name>sp_instance_8707f0e347622a1046f7b3f4116d4389</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 04:27:19</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"href": {
+		"value": "https://dev318814.service-now.com/tcr",
+		"displayValue": "https://dev318814.service-now.com/tcr"
+	},
+	"button_text": {
+		"value": "Request Details For Employee",
+		"displayValue": "Request Details For Employee"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=8707f0e347622a1046f7b3f4116d4389"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</application>
+        <file_path/>
+        <instance_id>dfdc4c3093f0ee54d9f6ddd548373c3b</instance_id>
+        <instance_name>dev318814</instance_name>
+        <name>sp_instance_8707f0e347622a1046f7b3f4116d4389</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;primary&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;6c3e9c2747eee61046f7b3f4116d4314&lt;/sp_column&gt;&lt;sp_widget display_value="link-button"&gt;abc50de6d702120023c84f80de61036a&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-11 04:26:12&lt;/sys_created_on&gt;&lt;sys_id&gt;8707f0e347622a1046f7b3f4116d4389&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0"&gt;0c19c259476a6a1046f7b3f4116d4358&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Travel Card Recharge Request Details"&gt;0c19c259476a6a1046f7b3f4116d4358&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_8707f0e347622a1046f7b3f4116d4389&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-11 04:27:19&lt;/sys_updated_on&gt;&lt;title/&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"href": {
+		"value": "https://dev318814.service-now.com/tcr",
+		"displayValue": "https://dev318814.service-now.com/tcr"
+	},
+	"button_text": {
+		"value": "Request Details For Employee",
+		"displayValue": "Request Details For Employee"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=8707f0e347622a1046f7b3f4116d4389"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>540417896</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>65150353472ae61046f7b3f4116d43a4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-11 04:27:19</sys_created_on>
+        <sys_id>1747bce347622a1046f7b3f4116d437e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197f7bcde630000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 04:27:19</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>db47bce307622a10877b621d8ab88b7d</update_guid>
+        <update_guid_history>db47bce307622a10877b621d8ab88b7d:540417896,830734a7fd622a107e9b2ef770602e52:-516436893</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">8cd778e347622a1046f7b3f4116d43a7</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-11 04:29:33</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>0aa0445101f04eab809232d322d37db1</sys_id>
+        <sys_metadata>8707f0e347622a1046f7b3f4116d4389</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0">0c19c259476a6a1046f7b3f4116d4358</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</sys_scope>
+        <sys_scope_delete display_value="">2962bc8133a64c04927a8f44df7beb89</sys_scope_delete>
+        <sys_update_name>sp_instance_8707f0e347622a1046f7b3f4116d4389</sys_update_name>
+        <sys_update_version display_value="sp_instance_8707f0e347622a1046f7b3f4116d4389">1747bce347622a1046f7b3f4116d437e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 04:29:33</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

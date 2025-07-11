@@ -7,7 +7,7 @@
         <applies_sc_task>false</applies_sc_task>
         <applies_target_record>false</applies_target_record>
         <applies_to>item</applies_to>
-        <cat_item display_value="travel card recharge ">c266ca5247ee621046f7b3f4116d43a4</cat_item>
+        <cat_item display_value="Travel Card Recharge ">c266ca5247ee621046f7b3f4116d43a4</cat_item>
         <cat_variable>IO:44fa61a64762e21046f7b3f4116d43fc</cat_variable>
         <condition/>
         <description/>
