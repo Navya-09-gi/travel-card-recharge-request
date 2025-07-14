@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="DELETE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.travel-home-container {&#13;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;&#13;
+}&#13;
+&#13;
+.travel-hero-banner {&#13;
+  background: linear-gradient(rgba(0, 102, 102, 0.6), rgba(0, 102, 102, 0.6)), url('https://img.freepik.com/premium-vector/online-flight-booking-app-mobile-phone-air-ticket-reservation-smartphone-screen-booking-airplane-flight-internet-service-airline-ticket-buying-flat-vector-illustration_493806-5331.jpg') center/cover no-repeat;&#13;
+  color: #fff;&#13;
+  text-align: center;&#13;
+  padding: 60px 20px;&#13;
+  border-radius: 16px;&#13;
+}&#13;
+&#13;
+.travel-hero-banner h1 {&#13;
+  font-size: 32px;&#13;
+  margin-bottom: 10px;&#13;
+}&#13;
+&#13;
+.travel-hero-banner p {&#13;
+  font-size: 18px;&#13;
+}&#13;
+&#13;
+.action-card {&#13;
+  background: #ffffff;&#13;
+  margin: -40px auto 30px auto;&#13;
+  padding: 30px;&#13;
+  max-width: 500px;&#13;
+  border-radius: 12px;&#13;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);&#13;
+  text-align: center;&#13;
+  position: relative;&#13;
+  z-index: 10;&#13;
+}&#13;
+&#13;
+.action-card .card-content i {&#13;
+  font-size: 40px;&#13;
+  color: #009999;&#13;
+  margin-bottom: 10px;&#13;
+}&#13;
+&#13;
+.action-card .card-content h2 {&#13;
+  margin: 10px 0;&#13;
+  color: #006666;&#13;
+}&#13;
+&#13;
+.action-card .card-content p {&#13;
+  color: #555;&#13;
+  margin-bottom: 20px;&#13;
+}&#13;
+&#13;
+.action-card button {&#13;
+  background-color: #009999;&#13;
+  color: #fff;&#13;
+  border: none;&#13;
+  padding: 12px 25px;&#13;
+  border-radius: 8px;&#13;
+  cursor: pointer;&#13;
+  font-size: 16px;&#13;
+  transition: background-color 0.3s ease;&#13;
+}&#13;
+&#13;
+.action-card button:hover {&#13;
+  background-color: #007777;&#13;
+}&#13;
+&#13;
+.process-tracker {&#13;
+  display: flex;&#13;
+  justify-content: center;&#13;
+  align-items: center;&#13;
+  margin-top: 40px;&#13;
+  flex-wrap: wrap;&#13;
+}&#13;
+&#13;
+.process-tracker .step {&#13;
+  display: flex;&#13;
+  flex-direction: column;&#13;
+  align-items: center;&#13;
+  text-align: center;&#13;
+}&#13;
+&#13;
+.process-tracker .step i {&#13;
+  font-size: 28px;&#13;
+  color: #009999;&#13;
+  margin-bottom: 5px;&#13;
+}&#13;
+&#13;
+.process-tracker .step p {&#13;
+  font-size: 14px;&#13;
+  color: #333;&#13;
+}&#13;
+&#13;
+.process-tracker .tracker-line {&#13;
+  width: 30px;&#13;
+  height: 2px;&#13;
+  background-color: #009999;&#13;
+  margin: 0 10px;&#13;
+}&#13;
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>homepage_widget</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>homepage widget</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-11 11:03:05</sys_created_on>
+        <sys_id>7c815eef472a2a1046f7b3f4116d431b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>homepage widget</sys_name>
+        <sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0">0c19c259476a6a1046f7b3f4116d4358</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</sys_scope>
+        <sys_update_name>sp_widget_7c815eef472a2a1046f7b3f4116d431b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 11:43:13</sys_updated_on>
+        <template><![CDATA[<div class="travel-home-container">
+  <div class="travel-hero-banner">
+    <h1>Travel Card Top-up System</h1>
+    <p>Seamlessly request top-ups and track approvals at each stage.</p>
+  </div>
+
+  <div class="action-card">
+    <div class="card-content">
+      <i class="fa fa-credit-card"></i>
+      <h2>Request Top-up</h2>
+      <p>If you have a valid visa and travel card, click below to raise a new top-up request.</p>
+      <button onclick="window.location.href='/sp?id=travel_card_topup_request'">Request Now</button>
+    </div>
+  </div>
+
+  <div class="process-tracker">
+    <div class="step">
+      <i class="fa fa-user"></i>
+      <p>Employee</p>
+    </div>
+    <div class="tracker-line"></div>
+    <div class="step">
+      <i class="fa fa-check-circle"></i>
+      <p>TDM/Account Manager</p>
+    </div>
+    <div class="tracker-line"></div>
+    <div class="step">
+      <i class="fa fa-users"></i>
+      <p>HR Team</p>
+    </div>
+    <div class="tracker-line"></div>
+    <div class="step">
+      <i class="fa fa-money-check-alt"></i>
+      <p>Finance Team</p>
+    </div>
+  </div>
+</div>
+]]></template>
+    </sp_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</application>
+        <file_path/>
+        <instance_id>dfdc4c3093f0ee54d9f6ddd548373c3b</instance_id>
+        <instance_name>dev318814</instance_name>
+        <name>sp_widget_7c815eef472a2a1046f7b3f4116d431b</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.travel-home-container {&amp;#13;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.travel-hero-banner {&amp;#13;
+  background: linear-gradient(rgba(0, 102, 102, 0.6), rgba(0, 102, 102, 0.6)), url('https://img.freepik.com/premium-vector/online-flight-booking-app-mobile-phone-air-ticket-reservation-smartphone-screen-booking-airplane-flight-internet-service-airline-ticket-buying-flat-vector-illustration_493806-5331.jpg') center/cover no-repeat;&amp;#13;
+  color: #fff;&amp;#13;
+  text-align: center;&amp;#13;
+  padding: 60px 20px;&amp;#13;
+  border-radius: 16px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.travel-hero-banner h1 {&amp;#13;
+  font-size: 32px;&amp;#13;
+  margin-bottom: 10px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.travel-hero-banner p {&amp;#13;
+  font-size: 18px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.action-card {&amp;#13;
+  background: #ffffff;&amp;#13;
+  margin: -40px auto 30px auto;&amp;#13;
+  padding: 30px;&amp;#13;
+  max-width: 500px;&amp;#13;
+  border-radius: 12px;&amp;#13;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);&amp;#13;
+  text-align: center;&amp;#13;
+  position: relative;&amp;#13;
+  z-index: 10;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.action-card .card-content i {&amp;#13;
+  font-size: 40px;&amp;#13;
+  color: #009999;&amp;#13;
+  margin-bottom: 10px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.action-card .card-content h2 {&amp;#13;
+  margin: 10px 0;&amp;#13;
+  color: #006666;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.action-card .card-content p {&amp;#13;
+  color: #555;&amp;#13;
+  margin-bottom: 20px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.action-card button {&amp;#13;
+  background-color: #009999;&amp;#13;
+  color: #fff;&amp;#13;
+  border: none;&amp;#13;
+  padding: 12px 25px;&amp;#13;
+  border-radius: 8px;&amp;#13;
+  cursor: pointer;&amp;#13;
+  font-size: 16px;&amp;#13;
+  transition: background-color 0.3s ease;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.action-card button:hover {&amp;#13;
+  background-color: #007777;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.process-tracker {&amp;#13;
+  display: flex;&amp;#13;
+  justify-content: center;&amp;#13;
+  align-items: center;&amp;#13;
+  margin-top: 40px;&amp;#13;
+  flex-wrap: wrap;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.process-tracker .step {&amp;#13;
+  display: flex;&amp;#13;
+  flex-direction: column;&amp;#13;
+  align-items: center;&amp;#13;
+  text-align: center;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.process-tracker .step i {&amp;#13;
+  font-size: 28px;&amp;#13;
+  color: #009999;&amp;#13;
+  margin-bottom: 5px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.process-tracker .step p {&amp;#13;
+  font-size: 14px;&amp;#13;
+  color: #333;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.process-tracker .tracker-line {&amp;#13;
+  width: 30px;&amp;#13;
+  height: 2px;&amp;#13;
+  background-color: #009999;&amp;#13;
+  margin: 0 10px;&amp;#13;
+}&amp;#13;
+&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;homepage_widget&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]&gt;&lt;/link&gt;&lt;name&gt;homepage widget&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-11 11:03:05&lt;/sys_created_on&gt;&lt;sys_id&gt;7c815eef472a2a1046f7b3f4116d431b&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;homepage widget&lt;/sys_name&gt;&lt;sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0"&gt;0c19c259476a6a1046f7b3f4116d4358&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Travel Card Recharge Request Details"&gt;0c19c259476a6a1046f7b3f4116d4358&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_7c815eef472a2a1046f7b3f4116d431b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-11 11:43:13&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="travel-home-container"&gt;
+  &lt;div class="travel-hero-banner"&gt;
+    &lt;h1&gt;Travel Card Top-up System&lt;/h1&gt;
+    &lt;p&gt;Seamlessly request top-ups and track approvals at each stage.&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class="action-card"&gt;
+    &lt;div class="card-content"&gt;
+      &lt;i class="fa fa-credit-card"&gt;&lt;/i&gt;
+      &lt;h2&gt;Request Top-up&lt;/h2&gt;
+      &lt;p&gt;If you have a valid visa and travel card, click below to raise a new top-up request.&lt;/p&gt;
+      &lt;button onclick="window.location.href='/sp?id=travel_card_topup_request'"&gt;Request Now&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="process-tracker"&gt;
+    &lt;div class="step"&gt;
+      &lt;i class="fa fa-user"&gt;&lt;/i&gt;
+      &lt;p&gt;Employee&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="tracker-line"&gt;&lt;/div&gt;
+    &lt;div class="step"&gt;
+      &lt;i class="fa fa-check-circle"&gt;&lt;/i&gt;
+      &lt;p&gt;TDM/Account Manager&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="tracker-line"&gt;&lt;/div&gt;
+    &lt;div class="step"&gt;
+      &lt;i class="fa fa-users"&gt;&lt;/i&gt;
+      &lt;p&gt;HR Team&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="tracker-line"&gt;&lt;/div&gt;
+    &lt;div class="step"&gt;
+      &lt;i class="fa fa-money-check-alt"&gt;&lt;/i&gt;
+      &lt;p&gt;Finance Team&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1687342211</payload_hash>
+        <record_name>homepage widget</record_name>
+        <reverted_from/>
+        <source>65150353472ae61046f7b3f4116d43a4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-11 11:43:13</sys_created_on>
+        <sys_id>e41bdeeb476a2a1046f7b3f4116d4397</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197f94bf1fb0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 11:43:13</sys_updated_on>
+        <type>Widget</type>
+        <update_guid>a81bdeebb66a2a10a6bf9be0e8bef196</update_guid>
+        <update_guid_history>a81bdeebb66a2a10a6bf9be0e8bef196:-1687342211,f0e11aef892a2a105efe77aeee8c1546:-330417406</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="homepage widget">6cec5aaf476a2a1046f7b3f4116d438e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-11 11:51:07</sys_created_on>
+        <sys_db_object display_value="" name="sp_widget">sp_widget</sys_db_object>
+        <sys_id>06c651408c7c4bbe82488098a334ec09</sys_id>
+        <sys_metadata>7c815eef472a2a1046f7b3f4116d431b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>homepage widget</sys_name>
+        <sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0">0c19c259476a6a1046f7b3f4116d4358</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</sys_scope>
+        <sys_scope_delete display_value="">2962bc8133a64c04927a8f44df7beb89</sys_scope_delete>
+        <sys_update_name>sp_widget_7c815eef472a2a1046f7b3f4116d431b</sys_update_name>
+        <sys_update_version display_value="sp_widget_7c815eef472a2a1046f7b3f4116d431b">e41bdeeb476a2a1046f7b3f4116d4397</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 11:51:07</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

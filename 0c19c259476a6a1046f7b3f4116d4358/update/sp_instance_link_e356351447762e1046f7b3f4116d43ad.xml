@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_link">
+    <sp_instance_link action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>info</color>
+        <css/>
+        <glyph>phone</glyph>
+        <id/>
+        <kb_article display_value="KB0010004 v0.01">8d74311c47362e1046f7b3f4116d4363</kb_article>
+        <kb_category/>
+        <kb_topic/>
+        <order>2</order>
+        <roles/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">6d6e0a9b47e2e61046f7b3f4116d4332</sp_column>
+        <sp_page display_value="kb_article">dea5792147132100ba13a5554ee4902d</sp_page>
+        <sp_widget display_value="Icon Link">3caa67afcb13020000f8d856634c9c2e</sp_widget>
+        <sys_class_name>sp_instance_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-13 16:58:18</sys_created_on>
+        <sys_id>e356351447762e1046f7b3f4116d43ad</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Travel Card Usage Guildelines</sys_name>
+        <sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0">0c19c259476a6a1046f7b3f4116d4358</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</sys_scope>
+        <sys_update_name>sp_instance_link_e356351447762e1046f7b3f4116d43ad</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-13 17:00:27</sys_updated_on>
+        <title>Travel Card Usage Guildelines</title>
+        <type>kb_article</type>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"link_template": {
+		"value": "Top Icon",
+		"displayValue": "Top Icon"
+	}
+}]]></widget_parameters>
+    </sp_instance_link>
+    <sys_translated_text action="delete_multiple" query="documentkey=e356351447762e1046f7b3f4116d43ad"/>
+</record_update>

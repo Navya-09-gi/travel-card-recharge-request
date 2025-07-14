@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="2">124e7cef47622a1046f7b3f4116d4309</sp_column>
+        <sp_widget display_value="Quick Links">dae53627530030101865ddeeff7b12be</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-13 09:50:08</sys_created_on>
+        <sys_id>2f545414477eea1046f7b3f4116d4340</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0">0c19c259476a6a1046f7b3f4116d4358</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</sys_scope>
+        <sys_update_name>sp_instance_2f545414477eea1046f7b3f4116d4340</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-13 09:50:08</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=2f545414477eea1046f7b3f4116d4340"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</application>
+        <file_path/>
+        <instance_id>dfdc4c3093f0ee54d9f6ddd548373c3b</instance_id>
+        <instance_name>dev318814</instance_name>
+        <name>sp_instance_2f545414477eea1046f7b3f4116d4340</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="2">124e7cef47622a1046f7b3f4116d4309</sp_column><sp_widget display_value="Quick Links">dae53627530030101865ddeeff7b12be</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-13 09:50:08</sys_created_on><sys_id>2f545414477eea1046f7b3f4116d4340</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0">0c19c259476a6a1046f7b3f4116d4358</sys_package><sys_policy/><sys_scope display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</sys_scope><sys_update_name>sp_instance_2f545414477eea1046f7b3f4116d4340</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-13 09:50:08</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=2f545414477eea1046f7b3f4116d4340"/></record_update>]]></payload>
+        <payload_hash>-992626626</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>65150353472ae61046f7b3f4116d43a4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-13 09:50:08</sys_created_on>
+        <sys_id>23545414477eea1046f7b3f4116d4343</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>198033121da0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-13 09:50:08</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>27545414187eea101987ddf1a937e842</update_guid>
+        <update_guid_history>27545414187eea101987ddf1a937e842:-992626626</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">da841814477eea1046f7b3f4116d43f0</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-13 09:50:52</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>03087e729ff54c2eb9638bd08d841e04</sys_id>
+        <sys_metadata>2f545414477eea1046f7b3f4116d4340</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0">0c19c259476a6a1046f7b3f4116d4358</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</sys_scope>
+        <sys_scope_delete display_value="">2962bc8133a64c04927a8f44df7beb89</sys_scope_delete>
+        <sys_update_name>sp_instance_2f545414477eea1046f7b3f4116d4340</sys_update_name>
+        <sys_update_version display_value="sp_instance_2f545414477eea1046f7b3f4116d4340">23545414477eea1046f7b3f4116d4343</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-13 09:50:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

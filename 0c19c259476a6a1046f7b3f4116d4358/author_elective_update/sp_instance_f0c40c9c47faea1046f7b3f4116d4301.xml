@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">44c2841c47faea1046f7b3f4116d43ff</sp_column>
+        <sp_widget display_value="HTML">8679ef89cb21120000f8d856634c9c4f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-13 08:41:56</sys_created_on>
+        <sys_id>f0c40c9c47faea1046f7b3f4116d4301</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Approval Process Flow</sys_name>
+        <sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0">0c19c259476a6a1046f7b3f4116d4358</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</sys_scope>
+        <sys_update_name>sp_instance_f0c40c9c47faea1046f7b3f4116d4301</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-13 08:42:59</sys_updated_on>
+        <title>Approval Process Flow</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"html": {
+		"value": "<pre>&lt;div class=\"approval-flow\"&gt;\r\n  &lt;div class=\"step completed\"&gt;]]>👤<![CDATA[ Employee&lt;/div&gt;\r\n  &lt;div class=\"step pending\"&gt;]]>👔<![CDATA[ Manager&lt;/div&gt;\r\n  &lt;div class=\"step upcoming\"&gt;]]>🧑<![CDATA[&zwj;]]>💼<![CDATA[ HR&lt;/div&gt;\r\n&lt;/div&gt;</pre>",
+		"displayValue": "<pre>&lt;div class=\"approval-flow\"&gt;\n  &lt;div class=\"step completed\"&gt;]]>👤<![CDATA[ Employee&lt;/div&gt;\n  &lt;div class=\"step pending\"&gt;]]>👔<![CDATA[ Manager&lt;/div&gt;\n  &lt;div class=\"step upcoming\"&gt;]]>🧑<![CDATA[&zwj;]]>💼<![CDATA[ HR&lt;/div&gt;\n&lt;/div&gt;</pre>"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=f0c40c9c47faea1046f7b3f4116d4301"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</application>
+        <file_path/>
+        <instance_id>dfdc4c3093f0ee54d9f6ddd548373c3b</instance_id>
+        <instance_name>dev318814</instance_name>
+        <name>sp_instance_f0c40c9c47faea1046f7b3f4116d4301</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;44c2841c47faea1046f7b3f4116d43ff&lt;/sp_column&gt;&lt;sp_widget display_value="HTML"&gt;8679ef89cb21120000f8d856634c9c4f&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-13 08:41:56&lt;/sys_created_on&gt;&lt;sys_id&gt;f0c40c9c47faea1046f7b3f4116d4301&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Approval Process Flow&lt;/sys_name&gt;&lt;sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0"&gt;0c19c259476a6a1046f7b3f4116d4358&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Travel Card Recharge Request Details"&gt;0c19c259476a6a1046f7b3f4116d4358&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_f0c40c9c47faea1046f7b3f4116d4301&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-13 08:42:59&lt;/sys_updated_on&gt;&lt;title&gt;Approval Process Flow&lt;/title&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"html": {
+		"value": "&lt;pre&gt;&amp;lt;div class=\"approval-flow\"&amp;gt;\r\n  &amp;lt;div class=\"step completed\"&amp;gt;]]&gt;👤&lt;![CDATA[ Employee&amp;lt;/div&amp;gt;\r\n  &amp;lt;div class=\"step pending\"&amp;gt;]]&gt;👔&lt;![CDATA[ Manager&amp;lt;/div&amp;gt;\r\n  &amp;lt;div class=\"step upcoming\"&amp;gt;]]&gt;🧑&lt;![CDATA[&amp;zwj;]]&gt;💼&lt;![CDATA[ HR&amp;lt;/div&amp;gt;\r\n&amp;lt;/div&amp;gt;&lt;/pre&gt;",
+		"displayValue": "&lt;pre&gt;&amp;lt;div class=\"approval-flow\"&amp;gt;\n  &amp;lt;div class=\"step completed\"&amp;gt;]]&gt;👤&lt;![CDATA[ Employee&amp;lt;/div&amp;gt;\n  &amp;lt;div class=\"step pending\"&amp;gt;]]&gt;👔&lt;![CDATA[ Manager&amp;lt;/div&amp;gt;\n  &amp;lt;div class=\"step upcoming\"&amp;gt;]]&gt;🧑&lt;![CDATA[&amp;zwj;]]&gt;💼&lt;![CDATA[ HR&amp;lt;/div&amp;gt;\n&amp;lt;/div&amp;gt;&lt;/pre&gt;"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=f0c40c9c47faea1046f7b3f4116d4301"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-339271662</payload_hash>
+        <record_name>Approval Process Flow</record_name>
+        <reverted_from/>
+        <source>65150353472ae61046f7b3f4116d43a4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-13 08:42:59</sys_created_on>
+        <sys_id>0805001c47faea1046f7b3f4116d43e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19802f3a7310000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-13 08:42:59</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>8c05001c47faea107923210b721affe5</update_guid>
+        <update_guid_history>8c05001c47faea107923210b721affe5:-339271662,7cc440dc5dfaea1001058d1f7a67765a:-955138279</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Approval Process Flow">f815c89c47faea1046f7b3f4116d4335</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-13 08:43:19</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>0a19ac3e1c1b4378ab02f82e5ecb9004</sys_id>
+        <sys_metadata>f0c40c9c47faea1046f7b3f4116d4301</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Approval Process Flow</sys_name>
+        <sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0">0c19c259476a6a1046f7b3f4116d4358</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</sys_scope>
+        <sys_scope_delete display_value="">2962bc8133a64c04927a8f44df7beb89</sys_scope_delete>
+        <sys_update_name>sp_instance_f0c40c9c47faea1046f7b3f4116d4301</sys_update_name>
+        <sys_update_version display_value="sp_instance_f0c40c9c47faea1046f7b3f4116d4301">0805001c47faea1046f7b3f4116d43e6</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-13 08:43:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

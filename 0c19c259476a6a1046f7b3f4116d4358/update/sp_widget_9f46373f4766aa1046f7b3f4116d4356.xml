@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.travel-home-container {&#13;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;&#13;
+}&#13;
+&#13;
+.travel-hero-banner {&#13;
+  background: linear-gradient(rgba(0, 102, 102, 0.6), rgba(0, 102, 102, 0.6)), url('https://img.freepik.com/premium-vector/online-flight-booking-app-mobile-phone-air-ticket-reservation-smartphone-screen-booking-airplane-flight-internet-service-airline-ticket-buying-flat-vector-illustration_493806-5331.jpg') center/cover no-repeat;&#13;
+  color: #fff;&#13;
+  text-align: center;&#13;
+  padding: 60px 20px;&#13;
+  border-radius: 16px;&#13;
+}&#13;
+&#13;
+.travel-hero-banner h1 {&#13;
+  font-size: 32px;&#13;
+  margin-bottom: 10px;&#13;
+}&#13;
+&#13;
+.travel-hero-banner p {&#13;
+  font-size: 18px;&#13;
+}&#13;
+&#13;
+.action-card {&#13;
+  background: #ffffff;&#13;
+  margin: -40px auto 30px auto;&#13;
+  padding: 30px;&#13;
+  max-width: 500px;&#13;
+  border-radius: 12px;&#13;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);&#13;
+  text-align: center;&#13;
+  position: relative;&#13;
+  z-index: 10;&#13;
+}&#13;
+&#13;
+.action-card .card-content i {&#13;
+  font-size: 40px;&#13;
+  color: #009999;&#13;
+  margin-bottom: 10px;&#13;
+}&#13;
+&#13;
+.action-card .card-content h2 {&#13;
+  margin: 10px 0;&#13;
+  color: #006666;&#13;
+}&#13;
+&#13;
+.action-card .card-content p {&#13;
+  color: #555;&#13;
+  margin-bottom: 20px;&#13;
+}&#13;
+&#13;
+.action-card button {&#13;
+  background-color: #009999;&#13;
+  color: #fff;&#13;
+  border: none;&#13;
+  padding: 12px 25px;&#13;
+  border-radius: 8px;&#13;
+  cursor: pointer;&#13;
+  font-size: 16px;&#13;
+  transition: background-color 0.3s ease;&#13;
+}&#13;
+&#13;
+.action-card button:hover {&#13;
+  background-color: #007777;&#13;
+}&#13;
+&#13;
+.process-tracker {&#13;
+  display: flex;&#13;
+  justify-content: center;&#13;
+  align-items: center;&#13;
+  margin-top: 40px;&#13;
+  flex-wrap: wrap;&#13;
+}&#13;
+&#13;
+.process-tracker .step {&#13;
+  display: flex;&#13;
+  flex-direction: column;&#13;
+  align-items: center;&#13;
+  text-align: center;&#13;
+}&#13;
+&#13;
+.process-tracker .step i {&#13;
+  font-size: 28px;&#13;
+  color: #009999;&#13;
+  margin-bottom: 5px;&#13;
+}&#13;
+&#13;
+.process-tracker .step p {&#13;
+  font-size: 14px;&#13;
+  color: #333;&#13;
+}&#13;
+&#13;
+.process-tracker .tracker-line {&#13;
+  width: 30px;&#13;
+  height: 2px;&#13;
+  background-color: #009999;&#13;
+  margin: 0 10px;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>homepage_widget</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Homepage widget</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-12 13:01:04</sys_created_on>
+        <sys_id>9f46373f4766aa1046f7b3f4116d4356</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Homepage widget</sys_name>
+        <sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0">0c19c259476a6a1046f7b3f4116d4358</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</sys_scope>
+        <sys_update_name>sp_widget_9f46373f4766aa1046f7b3f4116d4356</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-13 10:42:08</sys_updated_on>
+        <template><![CDATA[<div class="travel-home-container">
+  <div class="travel-hero-banner">
+    <h1>Travel Card Top-up System</h1>
+    <p>Seamlessly request top-ups and track approvals at each stage.</p>
+  </div>
+
+  <div class="action-card">
+    <div class="card-content">
+      <i class="fa fa-credit-card"></i>
+      <h2>Request Top-up</h2>
+      <p>If you have a valid visa and travel card, click below to raise a new top-up request.</p>
+      <button onclick="window.open('https://dev318814.service-now.com/tcr?id=sc_cat_item&sys_id=c266ca5247ee621046f7b3f4116d43a4', '_blank')">Request Now</button>
+
+     
+    </div>
+  </div>
+
+  <div class="process-tracker">
+    <div class="step">
+      <i class="fa fa-user"></i>
+      <p>Employee</p>
+    </div>
+    <div class="tracker-line"></div>
+    <div class="step">
+      <i class="fa fa-check-circle"></i>
+      <p>TDM/Account Manager</p>
+    </div>
+    <div class="tracker-line"></div>
+    <div class="step">
+      <i class="fa fa-users"></i>
+      <p>HR Team</p>
+    </div>
+    <div class="tracker-line"></div>
+    <div class="step">
+      <i class="fa fa-money-check-alt"></i>
+      <p>Finance Team</p>
+    </div>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

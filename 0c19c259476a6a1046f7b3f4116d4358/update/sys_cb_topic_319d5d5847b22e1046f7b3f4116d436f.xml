@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <autopilot_topic>false</autopilot_topic>
+        <category/>
+        <channels/>
+        <connect_queue/>
+        <context_profiles/>
+        <description/>
+        <dialog_acts_enabled>false</dialog_acts_enabled>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <foundational>false</foundational>
+        <graph>{
+  "graph_api_version": "1.0.78",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "b324b857337549b3adb213073cb5c5ef": {
+          "id": "b324b857337549b3adb213073cb5c5ef",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "4374ecf6c87e4c479773267a73d6a5ab": {
+          "id": "4374ecf6c87e4c479773267a73d6a5ab",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "200881b10ac6467f8b2eda1672c7ebc0": {
+          "id": "200881b10ac6467f8b2eda1672c7ebc0",
+          "stepType": "TextOutput",
+          "name": "Welcome Message",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Hii,"
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaInputs.user.name}}",
+                        "displayValue": "Input Variables➛User➛Name"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "3fbf9cf7c02e4871922ad05e3a8cf670"
+            }
+          ],
+          "isCollapsible": true,
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "27043aaf5eb3412a901f9c05932f140f": {
+          "name": "Choose Action",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "How Would You Like to do"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "e2e1b6fe6809464a8d2eadb99b82569f",
+          "detailDescription": "",
+          "id": "27043aaf5eb3412a901f9c05932f140f",
+          "stepType": "ChoicePrompt",
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "fa60c4501770474fa7106a434fbb7b6b": {
+          "id": "fa60c4501770474fa7106a434fbb7b6b",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "0619eab95df7490e9ef0437f36b17618": {
+          "id": "0619eab95df7490e9ef0437f36b17618",
+          "stepType": "ImplicitEnd"
+        },
+        "27710b7f0bd94f2991f8584da9ce8509": {
+          "id": "27710b7f0bd94f2991f8584da9ce8509",
+          "stepType": "LinkOutput",
+          "name": "Form Link",
+          "url": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "x_1791348_travel_0_travel_card_recharge_request_details.do?sys_id=-1"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "label": {
+            "value": "",
+            "mode": "simple"
+          },
+          "header": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Click to raise a request"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "linkType": "single",
+          "introMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "listOfLinks": ""
+        },
+        "a750b799f1784ecc94edd20d9ef778e2": {
+          "id": "a750b799f1784ecc94edd20d9ef778e2",
+          "stepType": "TextPrompt",
+          "name": "Get Employee name ",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Enter your Employee name"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "10fb13d71ea44a47a723b46b46b25791",
+          "detailDescription": "",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          },
+          "requestFeedback": true
+        },
+        "0daba72770dd4ff8a474eac5642b6bff": {
+          "id": "0daba72770dd4ff8a474eac5642b6bff",
+          "stepType": "LookupRecord",
+          "name": "Get the request record",
+          "condition": {
+            "mode": "glide_query",
+            "value": "employee_id=715c7a2a472ae21046f7b3f4116d439c"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "variableId": "90263d9fff95488abd4bf5e523087278"
+        },
+        "6743147740884cd3b99362b8f3176373": {
+          "id": "6743147740884cd3b99362b8f3176373",
+          "stepType": "RecordOutput",
+          "name": "show record",
+          "variableId": "90263d9fff95488abd4bf5e523087278",
+          "cardTemplate": "General",
+          "cardFields": {},
+          "mode": "variable",
+          "tableName": "x_1791348_travel_0_travel_card_recharge_request_details",
+          "fields": [
+            "employee_id",
+            "amount_to_be_loaded",
+            "currency_to_be_loaded",
+            "duration_from",
+            "duration_to",
+            "visa_copy",
+            "comments"
+          ],
+          "cardDefinition": {
+            "name": "Record",
+            "value": "General"
+          },
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "condition": {
+            "mode": "glide_query",
+            "value": ""
+          }
+        },
+        "29d46b2136d9416cae993b10fa5dcc22": {
+          "id": "29d46b2136d9416cae993b10fa5dcc22",
+          "stepType": "BooleanPrompt",
+          "name": "End Card",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Do you want to end the conversion?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "213a9204a4804cdcb3b505efb81cebf1",
+          "detailDescription": ""
+        },
+        "5d21695e3a4e4989acf1b7170add4580": {
+          "id": "5d21695e3a4e4989acf1b7170add4580",
+          "stepType": "ImplicitEnd"
+        },
+        "fd0ce934a3c845ec858fa390486b8734": {
+          "id": "fd0ce934a3c845ec858fa390486b8734",
+          "stepType": "Decision",
+          "name": "Decision"
+        }
+      },
+      "edges": [
+        {
+          "id": "f76b6f2ffdeb4988bff987dd268e0a7e",
+          "edgeType": "Branch",
+          "source": "fd0ce934a3c845ec858fa390486b8734",
+          "target": "0619eab95df7490e9ef0437f36b17618",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.end_card=true",
+            "mode": "query"
+          },
+          "label": "true"
+        },
+        {
+          "id": "a69da2435a074534b75f1296327a56a3",
+          "edgeType": "Branch",
+          "source": "fd0ce934a3c845ec858fa390486b8734",
+          "target": "5d21695e3a4e4989acf1b7170add4580",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.end_card=false",
+            "mode": "query"
+          },
+          "label": "false"
+        },
+        {
+          "id": "2ef165a903aa4c73aaa1560a665fff7a",
+          "edgeType": "Edge",
+          "source": "b324b857337549b3adb213073cb5c5ef",
+          "target": "200881b10ac6467f8b2eda1672c7ebc0",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "8902fd8f02204954beb0fe8907199d39",
+          "edgeType": "Edge",
+          "source": "200881b10ac6467f8b2eda1672c7ebc0",
+          "target": "27043aaf5eb3412a901f9c05932f140f",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "ec32ecb0d3e0402d875cae0e5c90c436",
+          "edgeType": "Edge",
+          "source": "27043aaf5eb3412a901f9c05932f140f",
+          "target": "fa60c4501770474fa7106a434fbb7b6b",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "86ca7627d8f340adbc2dab87f397641a",
+          "edgeType": "Branch",
+          "source": "fa60c4501770474fa7106a434fbb7b6b",
+          "target": "27710b7f0bd94f2991f8584da9ce8509",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.choose_action=Raise new request",
+            "mode": "query"
+          },
+          "label": "Raise a new request"
+        },
+        {
+          "id": "c37983628f9f42b68807414138f133f4",
+          "edgeType": "Edge",
+          "source": "27710b7f0bd94f2991f8584da9ce8509",
+          "target": "4374ecf6c87e4c479773267a73d6a5ab",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "07c185c392a8485990278e5e2063b622",
+          "edgeType": "Branch",
+          "source": "fa60c4501770474fa7106a434fbb7b6b",
+          "target": "a750b799f1784ecc94edd20d9ef778e2",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.choose_action=check request status",
+            "mode": "query"
+          },
+          "label": "Check status of request"
+        },
+        {
+          "id": "abfe958309834e239b0d4806e228d083",
+          "edgeType": "Edge",
+          "source": "a750b799f1784ecc94edd20d9ef778e2",
+          "target": "0daba72770dd4ff8a474eac5642b6bff",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "2d49a867490144d7bfdf6f1a036753df",
+          "edgeType": "Edge",
+          "source": "0daba72770dd4ff8a474eac5642b6bff",
+          "target": "6743147740884cd3b99362b8f3176373",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "9f87dc6892184e3f8f2cbce829b71f3c",
+          "edgeType": "Edge",
+          "source": "6743147740884cd3b99362b8f3176373",
+          "target": "29d46b2136d9416cae993b10fa5dcc22",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "c940407b99994967acf08de7b8468262",
+          "edgeType": "Edge",
+          "source": "29d46b2136d9416cae993b10fa5dcc22",
+          "target": "fd0ce934a3c845ec858fa390486b8734",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "e2e1b6fe6809464a8d2eadb99b82569f": {
+      "id": "e2e1b6fe6809464a8d2eadb99b82569f",
+      "name": "choose_action",
+      "label": "Choose Action",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "Raise new request",
+          "value": "Raise new request"
+        },
+        {
+          "label": "check request status",
+          "value": "check request status"
+        }
+      ],
+      "category": "vaInputs",
+      "nodeId": "27043aaf5eb3412a901f9c05932f140f",
+      "isHidden": false
+    },
+    "10fb13d71ea44a47a723b46b46b25791": {
+      "id": "10fb13d71ea44a47a723b46b46b25791",
+      "name": "get_employee_name_",
+      "label": "Get Employee Name ",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTc1MjQyMTQ0MzQ0MCBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      },
+      "nodeId": "a750b799f1784ecc94edd20d9ef778e2",
+      "isHidden": false
+    },
+    "90263d9fff95488abd4bf5e523087278": {
+      "id": "90263d9fff95488abd4bf5e523087278",
+      "name": "get_the_request_record",
+      "label": "Get The Request Record",
+      "varType": "reference",
+      "table": "x_1791348_travel_0_travel_card_recharge_request_details",
+      "category": "vaInputs",
+      "nodeId": "6743147740884cd3b99362b8f3176373",
+      "isHidden": false
+    },
+    "213a9204a4804cdcb3b505efb81cebf1": {
+      "id": "213a9204a4804cdcb3b505efb81cebf1",
+      "name": "end_card",
+      "label": "End Card",
+      "varType": "boolean",
+      "secure": false,
+      "category": "vaInputs",
+      "nodeId": "29d46b2136d9416cae993b10fa5dcc22",
+      "isHidden": false
+    }
+  }
+}</graph>
+        <key_phrases>Travel Card Top-Up</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <model_type>nlu_keyword</model_type>
+        <modify_confirmation_enabled>false</modify_confirmation_enabled>
+        <name>Travel Card Top-Up</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <roles/>
+        <root_topic_id/>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-13 15:10:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>319d5d5847b22e1046f7b3f4116d436f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Travel Card Top-Up</sys_name>
+        <sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0">0c19c259476a6a1046f7b3f4116d4358</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</sys_scope>
+        <sys_update_name>sys_cb_topic_319d5d5847b22e1046f7b3f4116d436f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-13 16:31:37</sys_updated_on>
+        <title>Travel Card Top-Up</title>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+    </sys_cb_topic>
+    <sys_translated_text action="delete_multiple" query="documentkey=319d5d5847b22e1046f7b3f4116d436f"/>
+</record_update>

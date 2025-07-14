@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.process-container {&#13;
+  padding: 20px;&#13;
+}&#13;
+&#13;
+.process-flow {&#13;
+  display: flex;&#13;
+  align-items: center;&#13;
+  justify-content: space-around;&#13;
+  flex-wrap: wrap;&#13;
+  text-align: center;&#13;
+}&#13;
+&#13;
+.step {&#13;
+  width: 200px;&#13;
+  margin: 10px;&#13;
+  padding: 10px;&#13;
+  background: #f8f9fa;&#13;
+  border: 1px solid #ddd;&#13;
+  border-radius: 10px;&#13;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.05);&#13;
+}&#13;
+&#13;
+.circle {&#13;
+  width: 40px;&#13;
+  height: 40px;&#13;
+  background-color: #007bff;&#13;
+  color: white;&#13;
+  font-weight: bold;&#13;
+  border-radius: 50%;&#13;
+  display: inline-flex;&#13;
+  align-items: center;&#13;
+  justify-content: center;&#13;
+  margin: 0 auto 10px auto;&#13;
+  font-size: 1.2em;&#13;
+}&#13;
+&#13;
+.arrow {&#13;
+  font-size: 2em;&#13;
+  margin: 0 10px;&#13;
+  color: #444;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>home widget</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-13 12:50:29</sys_created_on>
+        <sys_id>1d0d7c1047322e1046f7b3f4116d437b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>home widget</sys_name>
+        <sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0">0c19c259476a6a1046f7b3f4116d4358</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</sys_scope>
+        <sys_update_name>sp_widget_1d0d7c1047322e1046f7b3f4116d437b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-13 12:53:43</sys_updated_on>
+        <template><![CDATA[<div>
+<!-- your widget template -->
+  <div class="process-container">
+  <h4 class="text-center font-weight-bold mb-4">Approval Process Flow</h4>
+  <div class="process-flow">
+    <div class="step">
+      <div class="circle">1</div>
+      <h5>Employee</h5>
+      <p>Submit top-up request with valid visa & card details.</p>
+    </div>
+    <div class="arrow">→</div>
+    <div class="step">
+      <div class="circle">2</div>
+      <h5>TDM / Account Manager</h5>
+      <p>Approve, reject, or send back the request.</p>
+    </div>
+    <div class="arrow">→</div>
+    <div class="step">
+      <div class="circle">3</div>
+      <h5>HR Team</h5>
+      <p>Review and approve before forwarding to Finance.</p>
+    </div>
+    <div class="arrow">→</div>
+    <div class="step">
+      <div class="circle">4</div>
+      <h5>Finance Team</h5>
+      <p>Final approval and process the top-up.</p>
+    </div>
+  </div>
+</div>
+</div>]]></template>
+    </sp_widget>
+</record_update>
