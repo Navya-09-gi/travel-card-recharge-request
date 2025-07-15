@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_form_action_layout_item">
+    <sys_ux_form_action_layout_item action="INSERT_OR_UPDATE">
+        <action display_value="send back">7da5f42847366e1046f7b3f4116d43b0</action>
+        <active>true</active>
+        <animate_icon>false</animate_icon>
+        <color>secondary</color>
+        <description/>
+        <icon/>
+        <item_type>action</item_type>
+        <label>send back</label>
+        <layout_group/>
+        <name>send back</name>
+        <order>100</order>
+        <overflow>false</overflow>
+        <sys_class_name>sys_ux_form_action_layout_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 06:54:02</sys_created_on>
+        <sys_id>f1a5b8e847366e1046f7b3f4116d43c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>send back</sys_name>
+        <sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0">0c19c259476a6a1046f7b3f4116d4358</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</sys_scope>
+        <sys_update_name>sys_ux_form_action_layout_item_f1a5b8e847366e1046f7b3f4116d43c3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-14 06:54:02</sys_updated_on>
+        <table>sysapproval_approver</table>
+    </sys_ux_form_action_layout_item>
+</record_update>

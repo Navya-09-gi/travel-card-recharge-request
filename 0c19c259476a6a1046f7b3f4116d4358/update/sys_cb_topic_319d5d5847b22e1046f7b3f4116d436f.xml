@@ -144,66 +144,17 @@
           "stepType": "Decision",
           "name": "Decision"
         },
-        "0619eab95df7490e9ef0437f36b17618": {
-          "id": "0619eab95df7490e9ef0437f36b17618",
-          "stepType": "ImplicitEnd"
-        },
-        "27710b7f0bd94f2991f8584da9ce8509": {
-          "id": "27710b7f0bd94f2991f8584da9ce8509",
-          "stepType": "LinkOutput",
-          "name": "Form Link",
-          "url": {
-            "value": [
-              {
-                "type": "paragraph",
-                "children": [
-                  {
-                    "text": "x_1791348_travel_0_travel_card_recharge_request_details.do?sys_id=-1"
-                  }
-                ]
-              }
-            ],
-            "mode": "simple"
-          },
-          "label": {
-            "value": "",
-            "mode": "simple"
-          },
-          "header": {
-            "value": [
-              {
-                "type": "paragraph",
-                "children": [
-                  {
-                    "text": "Click to raise a request"
-                  }
-                ]
-              }
-            ],
-            "mode": "simple"
-          },
-          "applicability": {
-            "value": "",
-            "mode": "query"
-          },
-          "linkType": "single",
-          "introMsg": {
-            "value": "",
-            "mode": "simple"
-          },
-          "listOfLinks": ""
-        },
         "a750b799f1784ecc94edd20d9ef778e2": {
           "id": "a750b799f1784ecc94edd20d9ef778e2",
           "stepType": "TextPrompt",
-          "name": "Get Employee name ",
+          "name": "Get Request Reference Number",
           "prompt": {
             "value": [
               {
                 "type": "paragraph",
                 "children": [
                   {
-                    "text": "Enter your Employee name"
+                    "text": "Enter your Request Reference Number"
                   }
                 ]
               }
@@ -258,7 +209,7 @@
           "name": "Get the request record",
           "condition": {
             "mode": "glide_query",
-            "value": "employee_id=715c7a2a472ae21046f7b3f4116d439c"
+            "value": "number={{vaInputs.get_request_reference_number}}"
           },
           "applicability": {
             "value": "",
@@ -277,12 +228,9 @@
           "tableName": "x_1791348_travel_0_travel_card_recharge_request_details",
           "fields": [
             "employee_id",
-            "amount_to_be_loaded",
-            "currency_to_be_loaded",
             "duration_from",
             "duration_to",
-            "visa_copy",
-            "comments"
+            "status"
           ],
           "cardDefinition": {
             "name": "Record",
@@ -352,43 +300,179 @@
           "variableId": "213a9204a4804cdcb3b505efb81cebf1",
           "detailDescription": ""
         },
-        "5d21695e3a4e4989acf1b7170add4580": {
-          "id": "5d21695e3a4e4989acf1b7170add4580",
-          "stepType": "ImplicitEnd"
+        "ee448ef6bec24a6188e6b780fd709238": {
+          "id": "ee448ef6bec24a6188e6b780fd709238",
+          "stepType": "TextPrompt",
+          "name": "Get Reference Number",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Please enter your reference number"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "4a8f95ec540444f4879478404b17b73e",
+          "detailDescription": "",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          },
+          "requestFeedback": true
         },
-        "fd0ce934a3c845ec858fa390486b8734": {
-          "id": "fd0ce934a3c845ec858fa390486b8734",
+        "538ee95283294d338809fcdcd41ec851": {
+          "id": "538ee95283294d338809fcdcd41ec851",
+          "stepType": "LookupRecord",
+          "name": "Cancel Request",
+          "condition": {
+            "mode": "glide_query",
+            "value": "number={{vaInputs.get_reference_number}}^status=3"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "variableId": "d8ed200fc03d485eb71ca4e913e1d38b"
+        },
+        "1aa2813ef2184dc59032bff73a949c3b": {
+          "id": "1aa2813ef2184dc59032bff73a949c3b",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "048e32c7c7504edb993090ae677b4f8a": {
+          "id": "048e32c7c7504edb993090ae677b4f8a",
+          "stepType": "CrudAction",
+          "name": "Update Record",
+          "template": {
+            "query": {
+              "terms": [
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "status",
+                  "expression": "11",
+                  "id": "ea6c0bdc87d344308d516f77e7384175"
+                }
+              ]
+            },
+            "queryString": "status=11"
+          },
+          "mode": "update",
+          "record": "d8ed200fc03d485eb71ca4e913e1d38b",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "attachments": [
+            {
+              "value": "",
+              "mode": "simple"
+            }
+          ],
+          "variableId": "8b1dc7b1c5c34b72a2207023fb63cc69"
+        },
+        "1bee21d94b9b443abca6899d647d61fc": {
+          "id": "1bee21d94b9b443abca6899d647d61fc",
+          "stepType": "TextOutput",
+          "name": "Cancelled",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Your request has been cancelled successfully."
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "adb590d70f234a1c9ba572b59b1dabd1"
+            }
+          ],
+          "isCollapsible": true,
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "af5572d6a54843b1b34349593ec46286": {
+          "id": "af5572d6a54843b1b34349593ec46286",
+          "stepType": "TextOutput",
+          "name": "If not exists",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "The request is not in 'In Draft' state. So it cannot be cancelled."
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "d45796b8b4274649bfcb20e04adb6658"
+            }
+          ],
+          "isCollapsible": true,
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "dfedaf24bdb24ea2a0d320ab8a2c7b20": {
+          "id": "dfedaf24bdb24ea2a0d320ab8a2c7b20",
           "stepType": "Decision",
           "name": "Decision"
         }
       },
       "edges": [
-        {
-          "id": "f76b6f2ffdeb4988bff987dd268e0a7e",
-          "edgeType": "Branch",
-          "source": "fd0ce934a3c845ec858fa390486b8734",
-          "target": "0619eab95df7490e9ef0437f36b17618",
-          "sourcePort": "",
-          "targetPort": "",
-          "expression": {
-            "value": "vaInputs.end_card=true",
-            "mode": "query"
-          },
-          "label": "true"
-        },
-        {
-          "id": "a69da2435a074534b75f1296327a56a3",
-          "edgeType": "Branch",
-          "source": "fd0ce934a3c845ec858fa390486b8734",
-          "target": "5d21695e3a4e4989acf1b7170add4580",
-          "sourcePort": "",
-          "targetPort": "",
-          "expression": {
-            "value": "vaInputs.end_card=false",
-            "mode": "query"
-          },
-          "label": "false"
-        },
         {
           "id": "2ef165a903aa4c73aaa1560a665fff7a",
           "edgeType": "Edge",
@@ -410,27 +494,6 @@
           "edgeType": "Edge",
           "source": "27043aaf5eb3412a901f9c05932f140f",
           "target": "fa60c4501770474fa7106a434fbb7b6b",
-          "sourcePort": "",
-          "targetPort": ""
-        },
-        {
-          "id": "86ca7627d8f340adbc2dab87f397641a",
-          "edgeType": "Branch",
-          "source": "fa60c4501770474fa7106a434fbb7b6b",
-          "target": "27710b7f0bd94f2991f8584da9ce8509",
-          "sourcePort": "",
-          "targetPort": "",
-          "expression": {
-            "value": "vaInputs.choose_action=Raise new request",
-            "mode": "query"
-          },
-          "label": "Raise a new request"
-        },
-        {
-          "id": "c37983628f9f42b68807414138f133f4",
-          "edgeType": "Edge",
-          "source": "27710b7f0bd94f2991f8584da9ce8509",
-          "target": "4374ecf6c87e4c479773267a73d6a5ab",
           "sourcePort": "",
           "targetPort": ""
         },
@@ -472,12 +535,117 @@
           "targetPort": ""
         },
         {
+          "id": "86ca7627d8f340adbc2dab87f397641a",
+          "edgeType": "Branch",
+          "source": "fa60c4501770474fa7106a434fbb7b6b",
+          "target": "ee448ef6bec24a6188e6b780fd709238",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.choose_action=Cancel Request",
+            "mode": "query"
+          },
+          "label": "Cancel Request"
+        },
+        {
+          "id": "f60f9fcd03a74389b122962a566ef852",
+          "edgeType": "Edge",
+          "source": "ee448ef6bec24a6188e6b780fd709238",
+          "target": "538ee95283294d338809fcdcd41ec851",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "163bb2fa1e534048986d9dc499d1ce01",
+          "edgeType": "Edge",
+          "source": "538ee95283294d338809fcdcd41ec851",
+          "target": "1aa2813ef2184dc59032bff73a949c3b",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "f86604da7b214ceeb5683b384eea6690",
+          "edgeType": "Branch",
+          "source": "1aa2813ef2184dc59032bff73a949c3b",
+          "target": "048e32c7c7504edb993090ae677b4f8a",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.cancel_requestISNOTEMPTY",
+            "mode": "query"
+          },
+          "label": "If yes"
+        },
+        {
+          "id": "f3d55961dc1f47a9a7fa85c3e66149be",
+          "edgeType": "Edge",
+          "source": "048e32c7c7504edb993090ae677b4f8a",
+          "target": "1bee21d94b9b443abca6899d647d61fc",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "861f308300904d089a0ea9708748aa52",
+          "edgeType": "Edge",
+          "source": "1bee21d94b9b443abca6899d647d61fc",
+          "target": "4374ecf6c87e4c479773267a73d6a5ab",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "95e6f845e3b74d9f9ff69d122eee790e",
+          "edgeType": "Branch",
+          "source": "1aa2813ef2184dc59032bff73a949c3b",
+          "target": "af5572d6a54843b1b34349593ec46286",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "mode": "query",
+            "value": ""
+          },
+          "label": "If No"
+        },
+        {
+          "id": "6e9526d849bc4ef8947e960bf7f060b0",
+          "edgeType": "Edge",
+          "source": "af5572d6a54843b1b34349593ec46286",
+          "target": "4374ecf6c87e4c479773267a73d6a5ab",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
           "id": "c940407b99994967acf08de7b8468262",
           "edgeType": "Edge",
           "source": "29d46b2136d9416cae993b10fa5dcc22",
-          "target": "fd0ce934a3c845ec858fa390486b8734",
+          "target": "dfedaf24bdb24ea2a0d320ab8a2c7b20",
           "sourcePort": "",
           "targetPort": ""
+        },
+        {
+          "id": "5990f737713741189950cca07b9a5bcd",
+          "edgeType": "Branch",
+          "source": "dfedaf24bdb24ea2a0d320ab8a2c7b20",
+          "target": "4374ecf6c87e4c479773267a73d6a5ab",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.end_card=true",
+            "mode": "query"
+          },
+          "label": "yes"
+        },
+        {
+          "id": "deb984ffc5bf42b6a9d7326e83a8b841",
+          "edgeType": "Branch",
+          "source": "dfedaf24bdb24ea2a0d320ab8a2c7b20",
+          "target": "27043aaf5eb3412a901f9c05932f140f",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.end_card=false",
+            "mode": "query"
+          },
+          "label": "No"
         }
       ]
     }
@@ -498,8 +666,8 @@
       "varType": "choice",
       "choices": [
         {
-          "label": "Raise new request",
-          "value": "Raise new request"
+          "label": "Cancel Request",
+          "value": "Cancel Request"
         },
         {
           "label": "check request status",
@@ -512,8 +680,8 @@
     },
     "10fb13d71ea44a47a723b46b46b25791": {
       "id": "10fb13d71ea44a47a723b46b46b25791",
-      "name": "get_employee_name_",
-      "label": "Get Employee Name ",
+      "name": "get_request_reference_number",
+      "label": "Get Request Reference Number",
       "varType": "string",
       "secure": false,
       "category": "vaInputs",
@@ -544,6 +712,42 @@
       "category": "vaInputs",
       "nodeId": "29d46b2136d9416cae993b10fa5dcc22",
       "isHidden": false
+    },
+    "4a8f95ec540444f4879478404b17b73e": {
+      "id": "4a8f95ec540444f4879478404b17b73e",
+      "name": "get_reference_number",
+      "label": "Get Reference Number",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTc1MjUwOTM5NzE5MSBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      },
+      "nodeId": "ee448ef6bec24a6188e6b780fd709238",
+      "isHidden": false
+    },
+    "d8ed200fc03d485eb71ca4e913e1d38b": {
+      "id": "d8ed200fc03d485eb71ca4e913e1d38b",
+      "name": "cancel_request",
+      "label": "Cancel Request",
+      "varType": "reference",
+      "table": "x_1791348_travel_0_travel_card_recharge_request_details",
+      "category": "vaInputs",
+      "nodeId": "538ee95283294d338809fcdcd41ec851",
+      "isHidden": false
+    },
+    "8b1dc7b1c5c34b72a2207023fb63cc69": {
+      "id": "8b1dc7b1c5c34b72a2207023fb63cc69",
+      "name": "update_record",
+      "label": "Update Record",
+      "varType": "reference",
+      "table": "",
+      "inactive": true,
+      "category": "vaInputs",
+      "nodeId": "048e32c7c7504edb993090ae677b4f8a",
+      "isHidden": false
     }
   }
 }</graph>
@@ -568,14 +772,14 @@
         <sys_created_on>2025-07-13 15:10:02</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>319d5d5847b22e1046f7b3f4116d436f</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>Travel Card Top-Up</sys_name>
         <sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0">0c19c259476a6a1046f7b3f4116d4358</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</sys_scope>
         <sys_update_name>sys_cb_topic_319d5d5847b22e1046f7b3f4116d436f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-13 16:31:37</sys_updated_on>
+        <sys_updated_on>2025-07-15 05:48:07</sys_updated_on>
         <title>Travel Card Top-Up</title>
         <triggerable_by_notification>false</triggerable_by_notification>
         <type>STANDARD</type>

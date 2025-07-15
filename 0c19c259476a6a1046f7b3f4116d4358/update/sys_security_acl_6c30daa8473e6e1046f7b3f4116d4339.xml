@@ -9,22 +9,22 @@
         <decision_type>allow</decision_type>
         <description/>
         <local_or_existing>Local</local_or_existing>
-        <name>getEmpDet</name>
-        <operation display_value="execute">execute</operation>
+        <name>x_1791348_travel_0_travel_card_recharge_request_details</name>
+        <operation display_value="report_view">0997ab83733303005978e4b9cdf6a7b9</operation>
         <script/>
         <security_attribute/>
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-07-08 06:36:17</sys_created_on>
-        <sys_id>1f08f5ea47a2e21046f7b3f4116d437f</sys_id>
+        <sys_created_on>2025-07-14 13:31:27</sys_created_on>
+        <sys_id>6c30daa8473e6e1046f7b3f4116d4339</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>getEmpDet</sys_name>
+        <sys_name>x_1791348_travel_0_travel_card_recharge_request_details</sys_name>
         <sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0">0c19c259476a6a1046f7b3f4116d4358</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</sys_scope>
-        <sys_update_name>sys_security_acl_1f08f5ea47a2e21046f7b3f4116d437f</sys_update_name>
+        <sys_update_name>sys_security_acl_6c30daa8473e6e1046f7b3f4116d4339</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-08 06:36:17</sys_updated_on>
-        <type display_value="client_callable_script_include">client_callable_script_include</type>
+        <sys_updated_on>2025-07-14 13:31:27</sys_updated_on>
+        <type display_value="record">record</type>
     </sys_security_acl>
 </record_update>

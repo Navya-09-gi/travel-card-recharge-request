@@ -2,17 +2,17 @@
     <sys_security_acl_role action="INSERT_OR_UPDATE">
         <sys_class_name>sys_security_acl_role</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-07-14 05:44:12</sys_created_on>
-        <sys_id>eb55a8e047f26e1046f7b3f4116d432a</sys_id>
+        <sys_created_on>2025-07-14 12:44:23</sys_created_on>
+        <sys_id>b9d50ea847fa6e1046f7b3f4116d43d3</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>getEmpDet.x_1791348_travel_0.employee</sys_name>
+        <sys_name>x_1791348_travel_0_employee_details.x_1791348_travel_0.finance team</sys_name>
         <sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0">0c19c259476a6a1046f7b3f4116d4358</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</sys_scope>
-        <sys_security_acl display_value="getEmpDet">1f08f5ea47a2e21046f7b3f4116d437f</sys_security_acl>
-        <sys_update_name>sys_security_acl_role_eb55a8e047f26e1046f7b3f4116d432a</sys_update_name>
+        <sys_security_acl display_value="x_1791348_travel_0_employee_details">69d506a847fa6e1046f7b3f4116d43db</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_b9d50ea847fa6e1046f7b3f4116d43d3</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-14 05:44:12</sys_updated_on>
-        <sys_user_role display_value="x_1791348_travel_0.employee" name="x_1791348_travel_0.employee">460f610a472a221046f7b3f4116d4388</sys_user_role>
+        <sys_updated_on>2025-07-14 12:44:23</sys_updated_on>
+        <sys_user_role display_value="x_1791348_travel_0.finance team" name="x_1791348_travel_0.finance team">c60f610a472a221046f7b3f4116d43c5</sys_user_role>
     </sys_security_acl_role>
 </record_update>

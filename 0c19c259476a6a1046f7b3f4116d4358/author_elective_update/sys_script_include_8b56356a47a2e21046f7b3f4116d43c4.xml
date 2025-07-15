@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1791348_travel_0.getEmpDet</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>getEmpDet</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var getEmpDet = Class.create();
+getEmpDet.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    getEmpInfo: function() {
+        var empId = this.getParameter('sysparm_empnum');
+        var result = {};
+
+        gs.info("Received Employee ID: " + empId);
+
+        var empGR = new GlideRecord('x_1791348_travel_0_employee_details'); // ✅ Use your actual employee table here
+        empGR.addQuery('sys_id', empId); // Use sys_id if you're passing it instead
+        empGR.query();
+
+        if (empGR.next()) {
+            gs.info('Employee record found.');
+
+            result.name = empGR.name + '';
+            result.email = empGR.email + '';
+            result.contact_number = empGR.contact_number + '';
+            result.project = empGR.project + '';
+            result.tdm_or_account_manager = empGR.tdm_or_account_manager + '';
+            result.card_number = empGR.card_number + '';
+            result.bank_name_of_the_card = empGR.bank_name_of_the_card + '';
+        } else {
+            gs.info('No employee record found for ID: ' + empId);
+        }
+
+        return JSON.stringify(result);
+    },
+
+    type: 'getEmpDet'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 06:36:16</sys_created_on>
+        <sys_id>8b56356a47a2e21046f7b3f4116d43c4</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>getEmpDet</sys_name>
+        <sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0">0c19c259476a6a1046f7b3f4116d4358</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</sys_scope>
+        <sys_update_name>sys_script_include_8b56356a47a2e21046f7b3f4116d43c4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-14 10:17:23</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</application>
+        <file_path/>
+        <instance_id>dfdc4c3093f0ee54d9f6ddd548373c3b</instance_id>
+        <instance_name>dev318814</instance_name>
+        <name>sys_script_include_8b56356a47a2e21046f7b3f4116d43c4</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1791348_travel_0.getEmpDet&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;getEmpDet&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var getEmpDet = Class.create();
+getEmpDet.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    getEmpInfo: function() {
+        var empId = this.getParameter('sysparm_empnum');
+        var result = {};
+
+        gs.info("Received Employee ID: " + empId);
+
+        var empGR = new GlideRecord('x_1791348_travel_0_employee_details'); // ✅ Use your actual employee table here
+        empGR.addQuery('sys_id', empId); // Use sys_id if you're passing it instead
+        empGR.query();
+
+        if (empGR.next()) {
+            gs.info('Employee record found.');
+
+            result.name = empGR.name + '';
+            result.email = empGR.email + '';
+            result.contact_number = empGR.contact_number + '';
+            result.project = empGR.project + '';
+            result.tdm_or_account_manager = empGR.tdm_or_account_manager + '';
+            result.card_number = empGR.card_number + '';
+            result.bank_name_of_the_card = empGR.bank_name_of_the_card + '';
+        } else {
+            gs.info('No employee record found for ID: ' + empId);
+        }
+
+        return JSON.stringify(result);
+    },
+
+    type: 'getEmpDet'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-08 06:36:16&lt;/sys_created_on&gt;&lt;sys_id&gt;8b56356a47a2e21046f7b3f4116d43c4&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;getEmpDet&lt;/sys_name&gt;&lt;sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0"&gt;0c19c259476a6a1046f7b3f4116d4358&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Travel Card Recharge Request Details"&gt;0c19c259476a6a1046f7b3f4116d4358&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_8b56356a47a2e21046f7b3f4116d43c4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-14 10:17:23&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-342374376</payload_hash>
+        <record_name>getEmpDet</record_name>
+        <reverted_from/>
+        <source>65150353472ae61046f7b3f4116d43a4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 10:17:23</sys_created_on>
+        <sys_id>ac34a9a8473a6e1046f7b3f4116d436c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1980870711f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-14 10:17:23</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>6434a9a8e83a6e108559070573764a6c</update_guid>
+        <update_guid_history>6434a9a8e83a6e108559070573764a6c:-342374376,39d3caea0ee2e210a92fe7f8cbffc627:1958569080,68c1c66a24e2e210c61fe45828978946:-1130548310,f77c792297e2e210abec2eec9efa6b20:331550827,5ccbb12ebea2e210a6b6312c1ce64501:-870265486,680afd6eeca2e2104e26ac114f1ad12b:1674098472,6f08f5eaa4a2e21035f2d5e12089c8a3:-840262206</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 10:39:44</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>9a3e873d37a240c5b534feef8e8c41b1</sys_id>
+        <sys_metadata>8b56356a47a2e21046f7b3f4116d43c4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>getEmpDet</sys_name>
+        <sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0">0c19c259476a6a1046f7b3f4116d4358</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</sys_scope>
+        <sys_scope_delete display_value="">2962bc8133a64c04927a8f44df7beb89</sys_scope_delete>
+        <sys_update_name>sys_script_include_8b56356a47a2e21046f7b3f4116d43c4</sys_update_name>
+        <sys_update_version display_value="sys_script_include_8b56356a47a2e21046f7b3f4116d43c4">ac34a9a8473a6e1046f7b3f4116d436c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-14 10:39:44</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

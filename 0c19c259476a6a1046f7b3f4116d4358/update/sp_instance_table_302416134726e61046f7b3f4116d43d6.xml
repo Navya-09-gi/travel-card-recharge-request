@@ -5,7 +5,7 @@
         <color>default</color>
         <css/>
         <display_field/>
-        <field_list>sys_created_on,currency_type,duration_from,duration_to,employee_id,status,visa_copy,comments</field_list>
+        <field_list>number,sys_created_on,currency_type,duration_from,duration_to,employee_id,status,visa_copy,comments</field_list>
         <filter table="x_1791348_travel_0_travel_card_recharge_request_details">sys_created_by=javascript:gs.getUserName()^status=5<item endquery="false" field="sys_created_by" goto="false" newquery="false" operator="=" or="false" value="javascript:gs.getUserName()"/>
             <item display_value="Send Back" endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="5"/>
         </filter>
@@ -25,14 +25,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-07-10 16:34:26</sys_created_on>
         <sys_id>302416134726e61046f7b3f4116d43d6</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0">0c19c259476a6a1046f7b3f4116d4358</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</sys_scope>
         <sys_update_name>sp_instance_table_302416134726e61046f7b3f4116d43d6</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-10 16:40:16</sys_updated_on>
+        <sys_updated_on>2025-07-14 11:40:21</sys_updated_on>
         <table>x_1791348_travel_0_travel_card_recharge_request_details</table>
         <title/>
         <url/>
