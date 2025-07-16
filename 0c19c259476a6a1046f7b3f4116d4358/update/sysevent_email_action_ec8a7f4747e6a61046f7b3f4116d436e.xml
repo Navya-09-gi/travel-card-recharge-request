@@ -38,18 +38,23 @@
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html><![CDATA[<p>Hello ${employee_id}</p>
-<pre>Your Travel Card Recharge Request has been successfully completed by the Finance Team.
-
-Recharge Details:
-<span data-teams="true">- Amount To Be Loaded: ${amount_to_be_loaded}<br>- Currency Type: ${currency_type}&nbsp;<br>- Duration From: ${duration_from}&nbsp;<br>- Duration To: ${duration_to}<br>- Comments: ${comments}</span>
-
-
-
-The amount has now been credited to your travel card. Please check your card balance.
-
-Regards,  
-Finance Team</pre>
+        <message_html><![CDATA[<pre>Hello,</pre>
+<p>Your travel card recharge request ${employee_id} has been successfully approved by the Finance Team.</p>
+<p>]]>🔹<![CDATA[ Final Request Summary</p>
+<ul style="list-style-position: inside;">
+<li>
+<p>Amount Loaded: ${amount_to_be_loaded}</p>
+</li>
+<li>
+<p>Currency Type: ${currency_type}</p>
+</li>
+<li>
+<p>Duration: ${duration_from} to ${duration_to}</p>
+</li>
+</ul>
+<p>✅ Status: Completed ]]>💳<![CDATA[ Note: The requested amount has been credited to your travel card.</p>
+<p>Thank you for using the Travel Card Recharge System.</p>
+<pre>&nbsp;</pre>
 <p>&nbsp;</p>]]></message_html>
         <message_list/>
         <message_text/>
@@ -72,7 +77,7 @@ Finance Team</pre>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ec8a7f4747e6a61046f7b3f4116d436e</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Finance Team Approves</sys_name>
         <sys_overrides/>
         <sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0">0c19c259476a6a1046f7b3f4116d4358</sys_package>
@@ -80,7 +85,7 @@ Finance Team</pre>
         <sys_scope display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</sys_scope>
         <sys_update_name>sysevent_email_action_ec8a7f4747e6a61046f7b3f4116d436e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-10 07:08:30</sys_updated_on>
+        <sys_updated_on>2025-07-15 09:57:26</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>

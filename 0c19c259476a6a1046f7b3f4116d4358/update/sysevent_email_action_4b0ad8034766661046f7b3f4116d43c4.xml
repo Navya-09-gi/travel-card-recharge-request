@@ -38,13 +38,17 @@
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html><![CDATA[<p>Hello ${employee_id}</p>
-<p>&nbsp;Your travel card recharge request has been rejected by the Manager Team</p>
-<p>Comments: ${comments}</p>
-<p>You may review the feedback and submit a new request if necessary.</p>
-<p>Regards,</p>
-<p>servicenow,</p>
-<p>&nbsp;</p>]]></message_html>
+        <message_html><![CDATA[<p>Hello,</p>
+<p>Your travel card recharge request ${employee_id} has been rejected by the TDM Team.</p>
+<p>]]>🔹<![CDATA[ Request Summary</p>
+<ul style="list-style-type: disc; list-style-position: inside;">
+<li>Amount to be Loaded: ${amount_to_be_loaded}</li>
+<li>Currency Type: ${currency_type}</li>
+<li>Duration: ${duration_from} to ${duration_to}</li>
+<li>Comments from Manager:&nbsp;</li>
+</ul>
+<p>]]>📩<![CDATA[ Please review the comments and make necessary changes if you'd like to resubmit your request.</p>
+<p>Thank you for using the Travel Card Recharge System.</p>]]></message_html>
         <message_list/>
         <message_text/>
         <name>Manager has been  rejected</name>
@@ -66,7 +70,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4b0ad8034766661046f7b3f4116d43c4</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Manager has been  rejected</sys_name>
         <sys_overrides/>
         <sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0">0c19c259476a6a1046f7b3f4116d4358</sys_package>
@@ -74,7 +78,7 @@
         <sys_scope display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</sys_scope>
         <sys_update_name>sysevent_email_action_4b0ad8034766661046f7b3f4116d43c4</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-15 06:06:49</sys_updated_on>
+        <sys_updated_on>2025-07-15 09:25:14</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>

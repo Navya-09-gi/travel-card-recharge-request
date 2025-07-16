@@ -38,15 +38,22 @@
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html><![CDATA[<p>Hello ${employee_id}</p>
-<p>Your Travel Card Recharge Request has been approved by the HR Team.</p>
-<p>Details:<br><span data-teams="true">- Amount To Be Loaded: ${amount_to_be_loaded}</span></p>
-<p><span data-teams="true">-Currency Type: ${currency_type}&nbsp;</span></p>
-<p><span data-teams="true">&nbsp;-Duration From: ${duration_from}</span></p>
-<p><span data-teams="true">&nbsp;- Duration To: ${duration_to} </span></p>
-<p><span data-teams="true">- Comments: ${comments}</span>&nbsp;</p>
-<p>The request is now forwarded to the Finance Team for recharge processing.</p>
-<p>Regards, &nbsp;<br>Travel Card Management System</p>]]></message_html>
+        <message_html><![CDATA[<p>Hello,</p>
+<p>The travel card recharge request for ${employee_id} has been approved by the HR Team and is now progressing to the Finance Team for processing.</p>
+<p>]]>🔹<![CDATA[ Request Summary</p>
+<ul style="list-style-position: inside; list-style-type: circle;">
+<li>
+<p>Amount to be Loaded: ${amount_to_be_loaded}</p>
+</li>
+<li>
+<p>Currency Type: ${currency_type}</p>
+</li>
+<li>
+<p>Duration: ${duration_from} to ${duration_to}</p>
+</li>
+</ul>
+<p>]]>💳<![CDATA[ The Finance Team will now review and initiate the recharge. A confirmation will follow once the transaction is complete.</p>
+<p>Thank you for staying updated.</p>]]></message_html>
         <message_list/>
         <message_text/>
         <name>HR approval </name>
@@ -68,7 +75,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c7670fcf47a2a61046f7b3f4116d43b6</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>HR approval </sys_name>
         <sys_overrides/>
         <sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0">0c19c259476a6a1046f7b3f4116d4358</sys_package>
@@ -76,7 +83,7 @@
         <sys_scope display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</sys_scope>
         <sys_update_name>sysevent_email_action_c7670fcf47a2a61046f7b3f4116d43b6</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-10 07:10:55</sys_updated_on>
+        <sys_updated_on>2025-07-15 09:35:29</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>

@@ -25,9 +25,10 @@
    var ga = new GlideAjax('x_1791348_travel_0.getEmpDet');
     ga.addParam('sysparm_name', 'getEmpInfo');
     ga.addParam('sysparm_empnum', newValue);
+	//alert(newValue);
     ga.getXMLAnswer(function(response) {
         var data = JSON.parse(response);
-		alert(data);
+		//alert(data);
         if (data) {
             g_form.setValue('name', data.name+'');
             g_form.setValue('email', data.email+'');
@@ -50,7 +51,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>5d4282aa47e2e21046f7b3f4116d4385</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>getEmpDetails</sys_name>
         <sys_overrides/>
         <sys_package display_value="Travel Card Recharge Request Details" source="x_1791348_travel_0">0c19c259476a6a1046f7b3f4116d4358</sys_package>
@@ -58,7 +59,7 @@
         <sys_scope display_value="Travel Card Recharge Request Details">0c19c259476a6a1046f7b3f4116d4358</sys_scope>
         <sys_update_name>catalog_script_client_5d4282aa47e2e21046f7b3f4116d4385</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-08 07:27:54</sys_updated_on>
+        <sys_updated_on>2025-07-15 10:26:44</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>

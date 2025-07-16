@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="600f210a472a221046f7b3f4116d43fc" label="Travel Card Recharge Request Details" max_length="40" name="x_1791348_travel_0_travel_card_recharge_request_details" text_index="true" type="collection">
+        <element label="Editable flag" max_length="40" name="editable_flag" type="boolean"/>
         <element choice="3" default="1" label="status" max_length="40" name="status" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Re-Submitted" sequence="1" value="2"/>
